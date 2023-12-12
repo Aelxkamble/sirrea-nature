@@ -1,0 +1,159 @@
+/* Common styles for all screen sizes */
+.welcometo {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230613/pngtree-black-and-white-photo-of-a-wild-elephant-in-the-grass-image_2885611.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -90px;
+}
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.services {
+  background-image: url(https://png.pngtree.com/background/20230415/original/pngtree-texture-of-rain-and-fog-on-a-black-background-overlay-effect-picture-image_2434918.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.services h3 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.services p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 576px) {
+  /* Small screens and larger */
+  .services h3 {
+    font-size: 20px; /* Adjust the font size for small screens and larger */
+  }
+
+  .services p {
+    font-size: 14px; /* Adjust the font size for small screens and larger */
+  }
+}
+@media (min-width: 400px) {
+  /* Small screens and larger */
+  .services h3 {
+    font-size: 16px; /* Adjust the font size for small screens and larger */
+  }
+
+  .services p {
+    font-size: 10px; /* Adjust the font size for small screens and larger */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium screens and larger */
+  .services h3 {
+    font-size: 24px; /* Adjust the font size for medium screens and larger */
+  }
+
+  .services p {
+    font-size: 16px; /* Adjust the font size for medium screens and larger */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large screens and larger */
+  .services h3 {
+    font-size: 28px; /* Adjust the font size for large screens and larger */
+  }
+
+  .services p {
+    font-size: 18px; /* Adjust the font size for large screens and larger */
+  }
+}
+@media (min-width: 700px) {
+  /* Small screens and larger */
+  .services {
+    flex-direction: row; /* Change to row for larger screens */
+  }
+
+  .left {
+    order: 2; /* Change the order to 2 for larger screens */
+  }
+
+  .right {
+    order: 1; /* Change the order to 1 for larger screens */
+  }
+}
+
+
+
+
+
+
+
+.left {
+  width: 100%; /* Change to 100% width for small screens */
+  color: white;
+  margin: 1rem;
+  order: 1;
+}
+
+.right {
+  width: 100%; /* Change to 100% width for small screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 1rem;
+  order: 2;
+}
+
+.projects-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  /* Medium screens and larger */
+  .left {
+    width: 50%; /* Adjust the width for medium screens */
+  }
+
+  .right {
+    width: 50%; /* Adjust the width for medium screens */
+  }
+
+  .projects-section {
+    padding: 2rem; /* Adjust the padding for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large screens and larger */
+  .projects-section {
+    padding: 3rem; /* Adjust the padding for large screens */
+  }
+}

@@ -1,0 +1,15 @@
+.projectpage{
+    background-image: url(https://websitedemos.net/sierra-nature-02/wp-content/uploads/sites/339/2018/11/bg-05-free-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -90px;
+}

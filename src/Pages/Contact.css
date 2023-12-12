@@ -1,0 +1,15 @@
+.contact{
+    background-image: url(https://png.pngtree.com/background/20230415/original/pngtree-texture-of-rain-and-fog-on-a-black-background-overlay-effect-picture-image_2434918.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -90px;
+}

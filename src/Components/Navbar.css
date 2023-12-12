@@ -1,0 +1,134 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: none; /* Change this color as per your design */
+  padding: 10px 20px;
+  z-index: 100;
+  width: 100%; /* Ensure the navbar spans the full width */
+
+  .navbar-toggler-icon {
+    color: white; /* Change the color as per your design */
+  }
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  width: 80px; /* Adjust the size as needed */
+}
+
+.tabs-container {
+  display: flex;
+  gap: 20px;
+
+  /* Add a media query to hide tabs on small screens */
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  /* Add styles for the navigation links inside the collapsed menu */
+  a {
+    text-decoration: none;
+    color: white; /* Change the color as per your design */
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+}
+
+.cta-container {
+  margin-left: 20px;
+
+  /* Add a media query to hide CTA on small screens */
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.cta-button {
+  background-color: #d94948; /* Change the color as per your design */
+  color: white; /* Change the color as per your design */
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .tabs-container {
+    display: none;
+  }
+
+  .cta-container {
+    margin-left: 0;
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggler-icon {
+    color: white; /* Change the color as per your design */
+  }
+
+  .collapsed .tabs-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+    background-color: none; /* Change this color as per your design */
+    padding: 20px;
+    z-index: 99;
+  }
+
+  .collapsed a {
+    margin-bottom: 10px;
+  }
+}
+/* Navbar.css */
+
+/* ... existing styles ... */
+
+.navbar.collapsed .tabs-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust the top position as needed */
+  right: 0;
+  background-color: none; /* Change this color as per your design */
+  padding: 20px;
+  z-index: 99;
+}
+
+.navbar.collapsed .tabs-container.show {
+  display: flex;
+}
+
+.navbar-toggler {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggler-icon {
+    color: white; /* Change the color as per your design */
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
